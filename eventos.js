@@ -5,3 +5,12 @@ diver.addEventListener ("click", function() {
       alert("Hola! Soy el div");  
     }
 });
+const saludar = document.getElementById("saludar");
+
+saludar.addEventListener ("click", function(e) {
+    
+  e.stopPropagation();
+    if (saludar){
+      alert("Hola!");  
+    }
+});
